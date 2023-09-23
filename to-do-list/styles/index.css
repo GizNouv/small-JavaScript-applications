@@ -1,0 +1,125 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+ul, li {
+    list-style: none;
+}
+
+body {
+    background: #222;
+}
+
+section {
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto;
+    background: #fff;
+    border-radius: 30px;
+    padding: 40px 30px 70px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #edeef0;
+    border-radius: 30px;
+    margin-bottom: 32px;
+}
+
+input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: none;
+    padding: 16px;
+    font-weight: 14px;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+    background-color: #ff5945;
+    font-size: 16px;
+    color: #fff;
+    padding: 16px 50px;
+    border-radius: 40px;
+}
+
+.task-card {
+    display: flex;
+    font-size: 18px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.task-text {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.task-text::before {
+    display: block;
+    width: 24px;
+    height: 24px;
+    content: '';
+    background-image: url(../assets/images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+}
+.task-text.done::before {
+    display: block;
+    width: 24px;
+    height: 24px;
+    content: '';
+    background-image: url(../assets/images/checked.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.task-text.done {
+    text-decoration: line-through;
+    color: #555;
+}
+
+.x-sign {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 2px 12px;
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+.x-sign:hover {
+    background: #edeef0;
+}
+
+/* .check-box {
+    padding : 8px;
+
+    border : 1px solid gray;
+    border-radius: 50%;
+}
+
+.check-box.done {
+    background: green;
+    border: none;
+} */
+
+p.done {
+    text-decoration :line-through;
+}
