@@ -1,0 +1,95 @@
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    font-family: 'poppins';
+    padding-top: 124px;
+}
+
+ul , li {
+    list-style: none;
+}
+
+#quizCard {
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 32px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.changeText span {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#questions hr {
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    margin: 8px 0 16px;
+}
+
+#questions p {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+#questions ul {
+    margin-bottom: 24px;
+}
+
+#questions ul li {
+    padding: 8px 16px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    transition: all 0.15s;
+    cursor: pointer;  
+}
+
+#questions ul li:hover {
+    background: rgb(0, 0, 0 , 0.1);
+
+}
+
+#questions ul li.not-allowed {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+#questions ul li.not-allowed:hover {
+    background: auto;
+}
+
+#questions ul li.correct {
+    background-color: greenyellow;
+}
+
+#questions ul li.incorrect {
+    background-color: red;
+}
+
+#quizButton {
+    margin: 16px 0;
+    text-align: center;
+}
+
+#quizButton button {
+    background: orangered;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 12px 56px;
+    border: none;
+    border-radius: 8px;
+    transition: all 0.15s;
+}
+
+#quizButton button:hover {
+    background: orange;
+    cursor: pointer;
+}
